@@ -8,9 +8,9 @@ import pycolorizer
 import positive
 
 #bot
-bot_token = "5358186417:AAEd2C0Ne7SZE2ShfdGe8XFhI3_p4ceCUNc"#os.environ.get("TOKEN", "") 
-api_hash = "ac6664c07855e0455095d970a98a082d"#os.environ.get("HASH", "") 
-api_id = "11223922"#os.environ.get("ID", "")
+bot_token = os.environ.get("TOKEN", "") 
+api_hash = os.environ.get("HASH", "") 
+api_id = os.environ.get("ID", "")
 app = Client("my_bot",api_id=api_id, api_hash=api_hash,bot_token=bot_token)
 
 CHOOSE = ReplyKeyboard(row_width=3,one_time_keyboard=True,placeholder="choose",resize_keyboard=True,selective=True)
