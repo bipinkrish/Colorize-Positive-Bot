@@ -11,7 +11,6 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 RUN ml install colorize -y
-RUN ml configure colorize
 RUN wget https://github.com/bipinkrish/Colorize-Positive-Bot/releases/download/Model/colorization_release_v2.caffemodel -O model/colorization_release_v2.caffemodel
 
 CMD ["python3","bot.py"]
