@@ -5,3 +5,5 @@ telegraph==2.1.0
 pykeyboard==0.1.5
 halo
 wand
+tensorflow
+tensorflow-cpu
