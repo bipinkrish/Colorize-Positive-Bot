@@ -4,6 +4,9 @@ WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
 RUN apt update && apt-get upgrade -y
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Moscow
+RUN apt-get install -y tzdata
 RUN apt install wget -y
 
 RUN apt install python3-pip -y
