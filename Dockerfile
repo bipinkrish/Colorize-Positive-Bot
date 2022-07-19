@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get install -y python3-numpy python3-pydot python3-matplotlib python3-opencv python3-graphviz python3-toolz
 
 RUN wget https://github.com/bipinkrish/Colorize-Positive-Bot/releases/download/Model/model.zip && unzip model.zip && rm model.zip
-RUN wget https://github.com/bipinkrish/Colorize-Positive-Bot/releases/download/Model/deoldify.zip && unzip deoldify.zip && rm deoldify.zip
+RUN wget https://github.com/bipinkrish/Colorize-Positive-Bot/releases/download/Model/deoldify.zip 
+RUN unzip deoldify.zip && rm deoldify.zip
 
 CMD ["python3","bot.py"]
