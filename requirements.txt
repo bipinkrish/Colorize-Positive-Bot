@@ -15,8 +15,6 @@ ffmpeg-python
 jupyterlab
 opencv-python>=3.3.0.10
 Pillow==9.1.0
-torch==1.11.0+cpu
-torchvision==0.12.0+cpu 
 --extra-index-url https://download.pytorch.org/whl/cu113
 torch==1.11.0-cpu
 torchvision==0.12.0
