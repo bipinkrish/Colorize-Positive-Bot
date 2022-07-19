@@ -7,4 +7,3 @@ halo
 wand
 tensorflow
 tensorflow-cpu
-mlhub
