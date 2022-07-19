@@ -1,4 +1,5 @@
 import os
+os.system("pip install yt-dlp")
 import threading
 import pickle
 from pyrogram import Client
