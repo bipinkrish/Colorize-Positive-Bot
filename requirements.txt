@@ -7,3 +7,4 @@ halo
 wand
 tensorflow
 tensorflow-cpu
+opencv-python
