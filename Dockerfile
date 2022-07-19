@@ -8,6 +8,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 RUN apt-get install -y tzdata
 RUN apt install wget -y
+RUN apt install imagemagick -y
 
 RUN apt install python3-pip -y
 COPY . .
