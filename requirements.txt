@@ -7,3 +7,17 @@ halo
 wand
 tensorflow
 tensorflow-cpu
+#deoldif
+fastai==1.0.60
+tensorboardX>=1.6
+ffmpeg
+ffmpeg-python
+yt-dlp
+jupyterlab
+opencv-python>=3.3.0.10
+Pillow==9.1.0
+torch==1.11.0+cpu torchvision==0.12.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch==1.11.0-cpu
+torchvision==0.12.0
+ipywidgets

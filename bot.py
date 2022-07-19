@@ -6,6 +6,7 @@ from pyrogram import filters
 from pykeyboard import ReplyKeyboard, ReplyButton, ReplyKeyboardRemove
 import pycolorizer
 import positive
+import colorizer
 
 os.system("chmod 777 c41lab.py")
 os.system("chmod 777 negfix8")
@@ -50,6 +51,10 @@ def colorizeimage(message):
     output = file.split("/")[-1]
 
     pycolorizer.colorize_image(output,file)
+    app.send_document(message.chat.id,document=output)
+    os.remove(output)
+
+    colorizer.colorize(output,file)
     app.send_document(message.chat.id,document=output)
     os.remove(output)
 
