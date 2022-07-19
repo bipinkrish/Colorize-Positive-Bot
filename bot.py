@@ -49,15 +49,8 @@ def colorizeimage(message):
     file = app.download_media(message)
     output = file.split("/")[-1]
 
-    print("using simple tool")
     pycolorizer.colorize_image(output,file)
-    app.send_document(message.chat.id,document=output,caption="used tool -> simple tool")
-    os.remove(output)
-
-    print("using colorize tool")
-    output = output.replace(".","_color.")
-    os.system(f'ml color colorize "{file}"')
-    app.send_document(message.chat.id,document=output,caption="used tool -> colorize tool")
+    app.send_document(message.chat.id,document=output)
     os.remove(output)
 
     os.remove(file)
