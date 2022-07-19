@@ -7,6 +7,9 @@ from pykeyboard import ReplyKeyboard, ReplyButton, ReplyKeyboardRemove
 import pycolorizer
 import positive
 
+os.system("chmod 777 c41lab.py")
+os.system("chmod 777 negfix8")
+
 #bot
 bot_token = os.environ.get("TOKEN", "") 
 api_hash = os.environ.get("HASH", "") 
